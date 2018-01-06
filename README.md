@@ -2,18 +2,15 @@ Sudoku Vision Solver
 =================================
 
 ## Description
------------------------
 
 Solving a Sudoku Puzzle visually! 
 
 ## Main Features
-----------------------------
 - Image Processing using OpenCV2
 - Digit Recognition using Convolutional Neural Network in Tensorflow
 - Backtracking algorithm
 
 ## Prerequisites
-------------------------
 
 - Python3.5
 - Tensorflow
@@ -21,12 +18,10 @@ Solving a Sudoku Puzzle visually!
 - Numpy
 
 ## How to run
--------------------------
 > Save a puzzle image as puzzle.jpg
 > execute run.py
 
 ## Algorithm
--------------------------
 
 1. Image Preprocessing (Gaussian Blur -> Adaptive Thresholding -> Dilate with cross kernels (darkens grid)) 
 2. Find the largest Contour in the image ( Assuming puzzle is the largest blob and contour has four points) 
@@ -42,6 +37,7 @@ Solving a Sudoku Puzzle visually!
 
 The output should look like this
 
+![output](https://github.com/Henry-bee/SudokuVisionSolver/blob/master/puzzle.jpg)
 
 ## Sidenotes
 ------------------------
