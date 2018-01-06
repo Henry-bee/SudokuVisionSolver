@@ -39,6 +39,16 @@ Solving a Sudoku Puzzle visually!
 
 So here's a breakdown of what happened
 
+Firstly, the input image is fed
+[](https://github.com/Henry-bee/SudokuVisionSolver/blob/master/displayimages/displaypuzzle.jpg)
+
+At Step 7, image would look like this
+[](https://github.com/Henry-bee/SudokuVisionSolver/blob/master/displayimages/thresholdpuzzle.jpg)
+
+Meanwhile in the command line,
+[](https://github.com/Henry-bee/SudokuVisionSolver/blob/master/displayimages/output_img1.png)
+
+[](https://github.com/Henry-bee/SudokuVisionSolver/blob/master/displayimages/output_img2.png)
 
 ## Sidenotes
 ------------------------
