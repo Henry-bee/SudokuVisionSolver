@@ -1,5 +1,5 @@
 import cv2
-from vision import extractPuzzle, puzzle2array, formSolution
+from vision import extractPuzzle, puzzle2array
 from backtrack import solve, isSolvable
 from vision_utils import view
 import tensorflow as tf
