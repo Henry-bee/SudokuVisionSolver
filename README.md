@@ -48,20 +48,5 @@ The output should look like this
 
 - Network is trained with only with images from "Big Book of Sudoku" 
 - Puzzle with handwritten digits won't perform that well 
-- 
-
-
-
-Depending on the size of the project, if it is small and simple enough the reference docs can be added to the README. For medium size to larger projects it is important to at least provide a link to where the API reference docs live.
-
-## Tests
-
-Describe and show how to run the tests with code examples.
-
-## Contributors
-
-Let people know how they can dive into the project, include important links to things like issue trackers, irc, twitter accounts if applicable.
-
-## License
-
-A short snippet describing the license (MIT, Apache, etc.)
+- Architecture of CovNet: COV30 -> MAXPOOL -> COV15 -> MAXPOOL -> DROPOUT -> FC128 -> FC50 -> FC10 
+- 10 classes: digits (1-9) + noise
