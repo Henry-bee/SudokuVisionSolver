@@ -2,18 +2,15 @@ Sudoku Vision Solver
 =================================
 
 ## Description
------------------------
 
 Solving a Sudoku Puzzle visually! 
 
 ## Main Features
-----------------------------
 - Image Processing using OpenCV2
 - Digit Recognition using Convolutional Neural Network in Tensorflow
 - Backtracking algorithm
 
 ## Prerequisites
-------------------------
 
 - Python3.5
 - Tensorflow
@@ -21,12 +18,10 @@ Solving a Sudoku Puzzle visually!
 - Numpy
 
 ## How to run
--------------------------
 > Save a puzzle image as puzzle.jpg
 > execute run.py
 
 ## Algorithm
--------------------------
 
 1. Image Preprocessing (Gaussian Blur -> Adaptive Thresholding -> Dilate with cross kernels (darkens grid)) 
 2. Find the largest Contour in the image ( Assuming puzzle is the largest blob and contour has four points) 
@@ -42,26 +37,12 @@ Solving a Sudoku Puzzle visually!
 
 The output should look like this
 
+![output](https://github.com/Henry-bee/SudokuVisionSolver/blob/master/puzzle.jpg)
 
 ## Sidenotes
 ------------------------
 
 - Network is trained with only with images from "Big Book of Sudoku" 
 - Puzzle with handwritten digits won't perform that well 
-- 
-
-
-
-Depending on the size of the project, if it is small and simple enough the reference docs can be added to the README. For medium size to larger projects it is important to at least provide a link to where the API reference docs live.
-
-## Tests
-
-Describe and show how to run the tests with code examples.
-
-## Contributors
-
-Let people know how they can dive into the project, include important links to things like issue trackers, irc, twitter accounts if applicable.
-
-## License
-
-A short snippet describing the license (MIT, Apache, etc.)
+- Architecture of CovNet: COV30 -> MAXPOOL -> COV15 -> MAXPOOL -> DROPOUT -> FC128 -> FC50 -> FC10 
+- 10 classes: digits (1-9) + noise
