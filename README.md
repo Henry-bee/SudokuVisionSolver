@@ -1,4 +1,4 @@
-Sudoku Vision Solver
+Sudoku Vision Solver (Python) 
 =================================
 
 ## Description
@@ -39,10 +39,10 @@ Solving a Sudoku Puzzle visually!
 
 So here's a breakdown of what happened
 
-Firstly, the input image is fed <br />
+First, input image <br />
 ![a](https://github.com/Henry-bee/SudokuVisionSolver/blob/master/displayimages/displaypuzzle.jpg) <br />
 
-After Step 7, image would look like this <br />
+After Step 7, image looks like this <br />
 ![a](https://github.com/Henry-bee/SudokuVisionSolver/blob/master/displayimages/thresholdpuzzle.jpg) <br />
 
 Meanwhile in the command line, <br />
@@ -50,7 +50,7 @@ Meanwhile in the command line, <br />
 
 ![a](https://github.com/Henry-bee/SudokuVisionSolver/blob/master/displayimages/output_img2.png) <br />
 
-.... And its solved!
+.... its solved!
 
 ## Sidenotes
 ------------------------
