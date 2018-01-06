@@ -35,14 +35,17 @@ Solving a Sudoku Puzzle visually!
 10. Feed section thru CovNet to predict digit
 11. Solve puzzle using Backtrack Algorithm!
 
-The output should look like this
+--------------------------------------
 
-![output](https://github.com/Henry-bee/SudokuVisionSolver/blob/master/puzzle.jpg)
+So here's a breakdown of what happened
+
 
 ## Sidenotes
 ------------------------
 
 - Network is trained with only with images from "Big Book of Sudoku" 
-- Puzzle with handwritten digits won't perform that well 
+- Puzzle with handwritten digits won't work
 - Architecture of CovNet: COV30 -> MAXPOOL -> COV15 -> MAXPOOL -> DROPOUT -> FC128 -> FC50 -> FC10 
 - 10 classes: digits (1-9) + noise
+- Relatively poor at filtering out noisy cells
+

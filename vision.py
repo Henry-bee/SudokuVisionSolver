@@ -89,3 +89,13 @@ def extractPuzzle(gray):
 
     print('Complete Puzzle Extraction')
     return resized
+
+
+if __name__ == '__main__':
+
+    photo = cv2.imread('puzzle.jpg', 0)
+
+    photo = extractPuzzle(photo)
+    
+    photo = cv2.resize(photo, (250,400))
+    cv2.imwrite('./displayimages/thresholdpuzzle.jpg', photo)
