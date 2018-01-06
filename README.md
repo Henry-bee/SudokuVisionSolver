@@ -62,12 +62,13 @@ Meanwhile in the command line, <br />
 - Relatively poor at filtering out noisy cells
 
 ![a](https://github.com/Henry-bee/SudokuVisionSolver/blob/master/displayimages/noise1.jpg) <br />
-Noise accumulated from text shadows on the opposing page
+Noise accumulated from text shadow on the next page
 
 ![a](https://github.com/Henry-bee/SudokuVisionSolver/blob/master/displayimages/noise2.jpg) <br />
 Result of poorly trimmed grid lines
 
-- Any constructive feedback is welcome!:)
+- If you have a better way to filter out the noise or extract digits in a cleaner fashion, pls share! Any constructive feedback is welcome!:) 
+
 
 
 
