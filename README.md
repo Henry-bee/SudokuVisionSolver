@@ -62,7 +62,7 @@ Meanwhile in the command line, <br />
 - Relatively poor at filtering out noisy cells
 
 ![a](https://github.com/Henry-bee/SudokuVisionSolver/blob/master/displayimages/noise1.jpg) <br />
-Noise accumulated from text shadow on the next page
+Noise accumulated from the shadows of texts on the next page
 
 ![a](https://github.com/Henry-bee/SudokuVisionSolver/blob/master/displayimages/noise2.jpg) <br />
 Result of poorly trimmed grid lines
