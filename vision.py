@@ -29,7 +29,6 @@ def puzzle2array(img):
     return puzzle
 
 
-
 def extractPuzzle(gray):
     '''
     Main Image processing function to achieve grayscale puzzle without gridlines 

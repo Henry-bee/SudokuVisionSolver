@@ -114,16 +114,6 @@ def extractdigits(cell_y,cell_x,grid, n=2, this=False):
 def whitePct(img):
     return  np.count_nonzero(img) / (img.shape[0] * img.shape[1]) *100
 
-def aspectratio(cell, highest=0.98, lowest=0.45):
-    '''
-    Determine that the largest contour has aspect ratio within the given range
-    '''
-    cell = cell.astype('uint8')
-    _, cnt, hiers = cv2.findContours(cell,cv2.RETR_TREE,cv2.CHAIN_APPROX_SIMPLE)
-    cnt = sorted(cnt, key=cv2.contourArea, reverse=True)[0]
-    x,y,w,h = cv2.boundingRect(cnt)
-
-    return w/h < highest and w/h >lowest
 
 def repetitiveThreshold(img, target_pct):
     '''
@@ -163,6 +153,17 @@ def repetitiveFloodfill(dilated, overlapped, coords, i):
         i += 1
         whites = whitePct(dilated)
 
+
+def aspectratio(cell, highest=0.98, lowest=0.45):
+    '''
+    Determine that the largest contour has aspect ratio within the given range
+    '''
+    cell = cell.astype('uint8')
+    _, cnt, hiers = cv2.findContours(cell,cv2.RETR_TREE,cv2.CHAIN_APPROX_SIMPLE)
+    cnt = sorted(cnt, key=cv2.contourArea, reverse=True)[0]
+    x,y,w,h = cv2.boundingRect(cnt)
+
+    return w/h < highest and w/h >lowest
     
 def view(img, _size=(800,800)):
     view = cv2.resize(img, _size)

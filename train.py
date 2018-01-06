@@ -7,6 +7,9 @@ num_classes = 10
 TERMINAL_PATH = './saved_model/sudoku_cv.ckpt'
 normalize = True
 
+# Prepare the Sudoku images for training
+mnist = SudokuMNIST()
+mnist.traintestsplit()
 
 x = tf.placeholder(tf.float32, [None, 200, 200], name='X')
 y = tf.placeholder(tf.int64, [None], name='Y')
@@ -54,9 +57,7 @@ prediction = tf.equal(y_pred, y)
 prediction = tf.cast(prediction, tf.float32)
 accuracy = tf.reduce_mean(prediction, name='accuracy_op')
 
-# Prepare the Sudoku images for training
-mnist = SudokuMNIST()
-mnist.traintestsplit()
+
 
 with tf.Session() as sess:
     sess.run(tf.global_variables_initializer())
@@ -67,6 +68,7 @@ with tf.Session() as sess:
 
     while True:
 
+        # Train using SGD
         x_train, y_train = mnist.next_batch(100)
         x_test, y_test = mnist.next_batch(50, False)
 
