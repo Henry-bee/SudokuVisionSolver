@@ -67,5 +67,7 @@ Noise accumulated from text shadows on the opposing page
 ![a](https://github.com/Henry-bee/SudokuVisionSolver/blob/master/displayimages/noise2.jpg) <br />
 Result of poorly trimmed grid lines
 
-Noise accumulated from text shadows on the opposing page
+- Any constructive feedback is welcome!:)
+
+
 
