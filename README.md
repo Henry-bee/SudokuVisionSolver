@@ -42,7 +42,7 @@ So here's a breakdown of what happened
 First, input image <br />
 ![a](https://github.com/Henry-bee/SudokuVisionSolver/blob/master/displayimages/displaypuzzle.jpg) <br />
 
-After Step 7, image looks like this <br />
+After Step 7<br />
 ![a](https://github.com/Henry-bee/SudokuVisionSolver/blob/master/displayimages/thresholdpuzzle.jpg) <br />
 
 Meanwhile in the command line, <br />
@@ -50,7 +50,7 @@ Meanwhile in the command line, <br />
 
 ![a](https://github.com/Henry-bee/SudokuVisionSolver/blob/master/displayimages/output_img2.png) <br />
 
-.... its solved!
+.... it's solved!
 
 ## Sidenotes
 ------------------------
