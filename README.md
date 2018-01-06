@@ -31,7 +31,7 @@ Solving a Sudoku Puzzle visually!
 6. Floodfill Algorithm to eliminate the grids
 7. Result Image = White Digits + Black Background
 8. Divide up the image into 81 sections
-9. In each section with >5% white pixels, find largest connected component, isolate it and centralize
+9. If section >5% white pixels, find largest connected component, isolate it and centralize
 10. Feed section thru CovNet to predict digit
 11. Solve puzzle using Backtrack Algorithm!
 
