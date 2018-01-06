@@ -1,0 +1,2 @@
+model_checkpoint_path: "sudoku_cv.ckpt"
+all_model_checkpoint_paths: "sudoku_cv.ckpt"

@@ -1,4 +1,4 @@
-from Sudolver import Sudoku
+from Solver import Sudoku
 
 
 puzzle = Sudoku('puzzle', 'puzzle.jpg')
