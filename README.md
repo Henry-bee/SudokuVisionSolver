@@ -39,16 +39,16 @@ Solving a Sudoku Puzzle visually!
 
 So here's a breakdown of what happened
 
-Firstly, the input image is fed
-![a](https://github.com/Henry-bee/SudokuVisionSolver/blob/master/displayimages/displaypuzzle.jpg)
+Firstly, the input image is fed <br />
+![a](https://github.com/Henry-bee/SudokuVisionSolver/blob/master/displayimages/displaypuzzle.jpg) <br />
 
-At Step 7, image would look like this
-![a](https://github.com/Henry-bee/SudokuVisionSolver/blob/master/displayimages/thresholdpuzzle.jpg)
+At Step 7, image would look like this <br />
+![a](https://github.com/Henry-bee/SudokuVisionSolver/blob/master/displayimages/thresholdpuzzle.jpg) <br />
 
-Meanwhile in the command line,
-![a](https://github.com/Henry-bee/SudokuVisionSolver/blob/master/displayimages/output_img1.png)
+Meanwhile in the command line, <br />
+![a](https://github.com/Henry-bee/SudokuVisionSolver/blob/master/displayimages/output_img1.png) <br />
 
-![a](https://github.com/Henry-bee/SudokuVisionSolver/blob/master/displayimages/output_img2.png)
+![a](https://github.com/Henry-bee/SudokuVisionSolver/blob/master/displayimages/output_img2.png) <br />
 
 .... And its solved!
 
@@ -60,4 +60,12 @@ Meanwhile in the command line,
 - Architecture of CovNet: COV30 -> MAXPOOL -> COV15 -> MAXPOOL -> DROPOUT -> FC128 -> FC50 -> FC10 
 - 10 classes: digits (1-9) + noise
 - Relatively poor at filtering out noisy cells
+
+![a](https://github.com/Henry-bee/SudokuVisionSolver/blob/master/displayimages/noise1.jpg) <br />
+Noise accumulated from text shadows on the opposing page
+
+![a](https://github.com/Henry-bee/SudokuVisionSolver/blob/master/displayimages/noise2.jpg) <br />
+Result of poorly trimmed grid lines
+
+Noise accumulated from text shadows on the opposing page
 
