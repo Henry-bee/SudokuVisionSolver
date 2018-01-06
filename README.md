@@ -42,7 +42,7 @@ So here's a breakdown of what happened
 Firstly, the input image is fed <br />
 ![a](https://github.com/Henry-bee/SudokuVisionSolver/blob/master/displayimages/displaypuzzle.jpg) <br />
 
-At Step 7, image would look like this <br />
+After Step 7, image would look like this <br />
 ![a](https://github.com/Henry-bee/SudokuVisionSolver/blob/master/displayimages/thresholdpuzzle.jpg) <br />
 
 Meanwhile in the command line, <br />
