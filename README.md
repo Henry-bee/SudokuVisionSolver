@@ -50,6 +50,8 @@ Meanwhile in the command line,
 
 [](https://github.com/Henry-bee/SudokuVisionSolver/blob/master/displayimages/output_img2.png)
 
+.... And its solved!
+
 ## Sidenotes
 ------------------------
 
