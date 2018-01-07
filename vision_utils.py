@@ -119,13 +119,15 @@ def repetitiveThreshold(img, target_pct):
     '''
     Repeatedly tries different blocksize for adaptive thresholding until target pct is achieved
     '''
-    thres = 55
+    thres = 25
+    block = 3
     whites = whitePct(img)
 
     while whites > target_pct:
 
-        threshed = cv2.adaptiveThreshold(img,255,cv2.ADAPTIVE_THRESH_MEAN_C, cv2.THRESH_BINARY_INV,thres,2)
-        thres += 10
+        threshed = cv2.adaptiveThreshold(img,255,cv2.ADAPTIVE_THRESH_MEAN_C, cv2.THRESH_BINARY_INV, 19 ,block)
+        thres += 5
+        block += 10
         whites = whitePct(threshed)
 
     return threshed
@@ -152,7 +154,6 @@ def repetitiveFloodfill(dilated, overlapped, coords, i):
         floodfillGrid(dilated, overlapped, coords, i)
         i += 1
         whites = whitePct(dilated)
-
 
 def aspectratio(cell, highest=0.98, lowest=0.45):
     '''

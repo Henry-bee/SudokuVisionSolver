@@ -21,7 +21,6 @@ def deepnn(x, height, width, keep_prob=0.8):
 
     _x = tf.reshape(x, shape=[-1, height, width, 1])
 
-
     # CONV30 -> MAX_POOL2 ->
     out = layers.conv2d(_x, filters=30, kernel_size=5, activation=tf.nn.relu)
     out = layers.max_pooling2d(out, pool_size=2, strides=2)
