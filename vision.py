@@ -5,7 +5,7 @@ import numpy as np
 import cv2
 import tensorflow as tf
 from vision_utils import (extractdigits, four_point_transform, preprocess,
-                   repetitiveFloodfill, repetitiveThreshold, view, largestnConnectedComponents, centralize)
+                   repetitiveFloodfill, repetitiveThreshold, view, largestnConnectedComponents, centralize, aspectratio)
 
 
 def puzzle2array(img):
@@ -18,11 +18,18 @@ def puzzle2array(img):
         row =[]
         for x in range(0,9):
             digit = extractdigits(y, x, img)
+            
             if len(digit) < 1: 
                 row.append([])
             else:
                 print('Digit detected at cell %s %s'%(y,x))
-                row.append(digit[0])
+                print (digit)
+                print ('Aspect Ratio: %s'%(aspectratio(digit[0])))
+                print ("")
+                if aspectratio(digit[0]):
+                    row.append(digit[0])
+                else:
+                    row.append([])
         puzzle.append(row)
 
     print('Complete Puzzle2Arr')
@@ -96,6 +103,7 @@ if __name__ == '__main__':
     photo = cv2.imread('puzzle.jpg', 0)
 
     photo = extractPuzzle(photo)
-    
+    puzzle2array(photo)
     photo = cv2.resize(photo, (250,400))
-    cv2.imwrite('./displayimages/thresholdpuzzle.jpg', photo)
+    view(photo, (400,400))
+    # cv2.imwrite('./displayimages/thresholdpuzzle.jpg', photo)

@@ -99,7 +99,7 @@ with tf.Session() as sess:
         steps += 1
         ACC.append(acc)
 
-        if np.mean(ACC[-50:]) > 0.98 and test_acc > 0.98:
+        if np.mean(ACC[-50:]) >= 0.99 and test_acc >= 0.99:
             break
     
     # Save the model
