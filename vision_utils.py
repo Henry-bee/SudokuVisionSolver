@@ -120,14 +120,14 @@ def repetitiveThreshold(img, target_pct):
     Repeatedly tries different blocksize for adaptive thresholding until target pct is achieved
     '''
     thres = 55
-    block = 10
+    block = 5
     whites = whitePct(img)
 
     while whites > target_pct:
 
-        threshed = cv2.adaptiveThreshold(img,255,cv2.ADAPTIVE_THRESH_MEAN_C, cv2.THRESH_BINARY_INV, 19 ,block)
-        thres += 10
-        block += 10
+        threshed = cv2.adaptiveThreshold(img,255,cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY_INV, thres,block)
+        thres += 100
+        #block += 5
         whites = whitePct(threshed)
     return threshed
 

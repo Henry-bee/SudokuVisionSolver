@@ -70,7 +70,7 @@ def extractPuzzle(gray):
     # Find the sweet spot for thresholding
     new = repetitiveThreshold(warped, 15)
     print('Thresholding DONE!')
-
+    view(new, (400,400))
     # Dilate to enlarge the grids (Easier detection and removal)
     kernel = cv2.getStructuringElement(cv2.MORPH_CROSS,(3,3))
     dilated = cv2.dilate(new, kernel)
